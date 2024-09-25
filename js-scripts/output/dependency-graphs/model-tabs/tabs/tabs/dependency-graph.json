@@ -1,0 +1,79 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/model-tabs/tabs/tabs.test.tsx",
+      "dependencies": [
+        {
+          "module": "@/components/model-tabs/tabs/tabs",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/model-tabs/tabs/tabs",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/tabs/tabs-store",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/tabs/tabs-store",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/model-tabs/tabs/tabs",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/model-tabs/tabs/tabs.test.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/store/tabs/tabs-store",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/model-tabs/tabs/tabs.test.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/trees/deployed-catalog-tree/deployed-catalog-node/deployed-catalog-icon.tsx",
+      "dependencies": [
+        {
+          "module": "../../../../lib/utils",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/lib/utils.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "../../../icons",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/icons.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/deployed-catalog-tree/deployed-catalog-node/deployed-catalog-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/lib/utils.ts",
+      "dependencies": [
+        {
+          "module": "clsx",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/clsx@2.0.0/node_modules/clsx/clsx.d.mts",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "tailwind-merge",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/tailwind-merge@2.2.1/node_modules/tailwind-merge/dist/types.d.ts",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/trees/deployed-catalog-tree/deployed-catalog-node/deployed-catalog-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/clsx@2.0.0/node_modules/clsx/clsx.d.mts",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/lib/utils.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/tailwind-merge@2.2.1/node_modules/tailwind-merge/dist/types.d.ts",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/lib/utils.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/icons.tsx",
+      "dependencies": [
+        {
+          "module": "@/lib/utils",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/lib/utils",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/trees/deployed-catalog-tree/deployed-catalog-node/deployed-catalog-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/lib/utils",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/icons.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/trees/data-source-tree/data-source-node/node-icon.tsx",
+      "dependencies": [
+        {
+          "module": "../../shared/interfaces",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/trees/shared/interfaces.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/components/icons",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/icons",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/components/ui/skeleton",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/ui/skeleton",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/icons",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/data-source-tree/data-source-node/node-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/ui/skeleton",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/data-source-tree/data-source-node/node-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/trees/shared/interfaces.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/data-source-tree/data-source-node/node-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

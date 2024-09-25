@@ -1,5 +1,5 @@
 import fs from "fs";
-export function readFile(filePath) {
+export function readFile(filePath: string) {
   try {
     console.log("### READING FILE", filePath);
     const fileContent = fs.readFileSync(filePath, "utf8");

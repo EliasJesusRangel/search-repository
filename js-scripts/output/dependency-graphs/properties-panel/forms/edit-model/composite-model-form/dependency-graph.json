@@ -1,0 +1,1563 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/composite-model-form.tsx",
+      "dependencies": [
+        {
+          "module": "../../../../hooks/use-composite-model",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/hooks/use-composite-model.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./model-fields/composite-model-fields",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/composite-model-fields.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./model-form-base",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/composite-model-form.tsx",
+        "../../SML/apps/web/hooks/use-async-state.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/general-section.tsx",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/hooks/use-composite-model.ts",
+      "dependencies": [
+        {
+          "module": "./file-hooks/use-create-file",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/hooks/file-hooks/use-create-file.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./use-files",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/hooks/use-files.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/components/properties-panel/forms/edit-model/use-edit-composite-model",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/properties-panel/forms/edit-model/use-edit-composite-model",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/dicontainer/diTypes",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/dicontainer/diTypes",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/store",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/store",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/use-state-context",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/use-state-context",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "inversify-react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/builders/YamlObjectBuilders/YamlCompositeModelBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCompositeModelBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/composite-model-form.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/properties-panel/forms/edit-model/use-edit-composite-model",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/dicontainer/diTypes",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts",
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts",
+        "../../SML/apps/web/hooks/use-files.ts",
+        "../../SML/apps/web/hooks/use-unstaged-files.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/store/store",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts",
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts",
+        "../../SML/apps/web/hooks/use-files.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/store/use-state-context",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts",
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts",
+        "../../SML/apps/web/hooks/use-files.ts",
+        "../../SML/apps/web/hooks/use-async-state.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts",
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts",
+        "../../SML/apps/web/hooks/use-files.ts",
+        "../../SML/apps/web/hooks/use-unstaged-files.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/hooks/file-hooks/use-create-file.ts",
+      "dependencies": [
+        {
+          "module": "../use-files",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/hooks/use-files.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "../use-unstaged-files",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/hooks/use-unstaged-files.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/dicontainer/diTypes",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/dicontainer/diTypes",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/hooks/use-app-snackbar",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/hooks/use-app-snackbar",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/store",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/store",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/use-state-context",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/use-state-context",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "inversify-react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/builders/YamlObjectBuilders/YamlCatalogBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCatalogBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/FileType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/FileType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/type-guards/file-type-guard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/type-guards/file-type-guard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/Guard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/Guard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/hooks/use-app-snackbar",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/hooks/use-files.ts",
+      "dependencies": [
+        {
+          "module": "./use-async-state",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/hooks/use-async-state.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/dicontainer/diTypes",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/dicontainer/diTypes",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/store",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/store",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/use-state-context",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/use-state-context",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "inversify-react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts",
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/hooks/use-async-state.ts",
+      "dependencies": [
+        {
+          "module": "@/store/store-context",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/store-context",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/use-state-context",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/use-state-context",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-files.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/store/store-context",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-async-state.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/hooks/use-unstaged-files.ts",
+      "dependencies": [
+        {
+          "module": "@/common/constants/constants",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/common/constants/constants",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/dicontainer/diTypes",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/dicontainer/diTypes",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@tanstack/react-query",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/@tanstack+react-query@5.28.12_react@18.2.0/node_modules/@tanstack/react-query/build/modern/index.d.ts",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "inversify-react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/common/constants/constants",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-unstaged-files.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/@tanstack+react-query@5.28.12_react@18.2.0/node_modules/@tanstack/react-query/build/modern/index.d.ts",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-unstaged-files.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCatalogBuilder.ts",
+      "dependencies": [
+        {
+          "module": "../../ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./YamlObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/ObjectType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts",
+        "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCatalogBuilder.ts",
+        "../../SML/packages/models/src/FileType.ts",
+        "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCompositeModelBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlObjectBuilder.ts",
+      "dependencies": [
+        {
+          "module": "../../SourceType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/SourceType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "../../YamlSerializer/YamlSerizlizer",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/YamlSerializer/YamlSerizlizer.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/builders/AnyObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/builders/AnyObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCatalogBuilder.ts",
+        "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCompositeModelBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/SourceType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlObjectBuilder.ts",
+        "../../SML/packages/models/src/IFile.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/YamlSerializer/YamlSerizlizer.ts",
+      "dependencies": [
+        {
+          "module": "js-yaml",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/js-yaml@4.1.0/node_modules/js-yaml/dist/js-yaml.mjs",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/js-yaml@4.1.0/node_modules/js-yaml/dist/js-yaml.mjs",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/models/src/YamlSerializer/YamlSerizlizer.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/builders/AnyObjectBuilder.ts",
+      "dependencies": [
+        {
+          "module": "./AbstractObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/builders/AbstractObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/builders/AbstractObjectBuilder.ts",
+      "dependencies": [
+        {
+          "module": "../../utils/clone.util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/clone.util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/utils/builders/AnyObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/clone.util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/utils/builders/AbstractObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/FileType.ts",
+      "dependencies": [
+        {
+          "module": "./ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts",
+        "../../SML/packages/models/src/type-guards/file-type-guard.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/type-guards/file-type-guard.ts",
+      "dependencies": [
+        {
+          "module": "../FileType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/FileType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "../yaml/guards/type-guard-util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/type-guard-util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/guards/type-guard-util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/models/src/type-guards/file-type-guard.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/Guard.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/hooks/file-hooks/use-create-file.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlCompositeModelBuilder.ts",
+      "dependencies": [
+        {
+          "module": "../../ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./YamlObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/builders/YamlObjectBuilders/YamlObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/hooks/use-composite-model.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/composite-model-fields.tsx",
+      "dependencies": [
+        {
+          "module": "./general-section",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/general-section.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/lib/utils",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/lib/utils",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/composite-model-form.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/lib/utils",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/composite-model-fields.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/general-section.tsx",
+      "dependencies": [
+        {
+          "module": "@/components/left-sidebar/git-sidebar/sections/common/section-layout",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/left-sidebar/git-sidebar/sections/common/section-layout",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/components/sidebar/form/form-fields",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/sidebar/form/form-fields",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "zod",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/zod@3.22.3/node_modules/zod/index.d.ts",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/composite-model-fields.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/left-sidebar/git-sidebar/sections/common/section-layout",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/general-section.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/sidebar/form/form-fields",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/general-section.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/zod@3.22.3/node_modules/zod/index.d.ts",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/general-section.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx",
+      "dependencies": [
+        {
+          "module": "@/components/sidebar/form/form",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/sidebar/form/form",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/dicontainer/diTypes",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/dicontainer/diTypes",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/hooks/use-files",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/hooks/use-files",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "inversify-react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/IFile",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/IFile.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/react@18.2.0/node_modules/react/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/composite-model-form.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/sidebar/form/form",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/hooks/use-files",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/IFile.ts",
+      "dependencies": [
+        {
+          "module": "./SourceType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/SourceType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-form-base.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

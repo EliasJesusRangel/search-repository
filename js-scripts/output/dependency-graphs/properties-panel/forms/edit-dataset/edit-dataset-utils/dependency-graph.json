@@ -1,0 +1,41 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-dataset/edit-dataset-utils.ts",
+      "dependencies": [
+        {
+          "module": "models/src/ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/ObjectType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-dataset/edit-dataset-utils.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

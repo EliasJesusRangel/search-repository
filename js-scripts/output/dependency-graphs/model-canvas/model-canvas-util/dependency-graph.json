@@ -1,0 +1,165 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/model-canvas/model-canvas-util.ts",
+      "dependencies": [
+        {
+          "module": "compiler/src/utils/column-data-type.util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/compiler/src/utils/column-data-type.util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/yaml/guards/YamlDatasetTypeGuard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/YamlDatasetTypeGuard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/yaml/IYamlDataset",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/IYamlDataset.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/compiler/src/utils/column-data-type.util.ts",
+      "dependencies": [
+        {
+          "module": "models/src/yaml/IYamlDataset",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/IYamlDataset.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/enum.util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/enum.util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/model-canvas/model-canvas-util.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/IYamlDataset.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/model-canvas/model-canvas-util.ts",
+        "../../SML/packages/compiler/src/utils/column-data-type.util.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/enum.util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/compiler/src/utils/column-data-type.util.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/guards/YamlDatasetTypeGuard.ts",
+      "dependencies": [
+        {
+          "module": "./type-guard-util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/type-guard-util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/model-canvas/model-canvas-util.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/guards/type-guard-util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/models/src/yaml/guards/YamlDatasetTypeGuard.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

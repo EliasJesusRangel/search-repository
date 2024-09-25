@@ -1,11 +1,14 @@
-import { ICruiseOptions } from "dependency-cruiser";
+import { exportToFile } from "@ts-graphviz/node";
+import { writeFile } from "@/src/utilities/write-file";
+import { ICruiseOptions, ICruiseResult } from "dependency-cruiser";
 import {
   cruise,
   type IReporterOutput,
   IForbiddenRuleType,
 } from "dependency-cruiser";
-import { existsSync } from "fs";
-import { resolve } from "path";
+import { Mode, existsSync } from "fs";
+import path, { resolve } from "path";
+
 const forbiddenRules: IForbiddenRuleType[] = [
   {
     name: "no-circular",
@@ -190,7 +193,7 @@ const options: ICruiseOptions = {
   /* Which modules not to follow further when encountered */
   doNotFollow: {
     /* path: an array of regular expressions in strings to match against */
-    path: ["node_modules"],
+    path: ["node_modules", ".github", ".next", "dist"],
   },
 
   /* Which modules to exclude */
@@ -323,6 +326,7 @@ const options: ICruiseOptions = {
      */
     // aliasFields: ["browser"],
   },
+
   reporterOptions: {
     dot: {
       /* pattern of modules that can be consolidated in the detailed
@@ -337,14 +341,14 @@ const options: ICruiseOptions = {
          for details and some examples. If you don't specify a theme
          dependency-cruiser falls back to a built-in one.
       */
-      // theme: {
-      //   graph: {
-      //     /* splines: "ortho" gives straight lines, but is slow on big graphs
-      //        splines: "true" gives bezier curves (fast, not as nice as ortho)
-      //    */
-      //     splines: "true"
-      //   },
-      // }
+      theme: {
+        graph: {
+          /* splines: "ortho" gives straight lines, but is slow on big graphs
+             splines: "true" gives bezier curves (fast, not as nice as ortho)
+         */
+          splines: "true",
+        },
+      },
     },
     archi: {
       /* pattern of modules that can be consolidated in the high level
@@ -377,15 +381,82 @@ export default function buildDependencyTree() {
   }
   initiateRepoDependencyTree([rootRepoPath]);
 }
-function buildFileDependencyTree(path: string) {}
-function buildFolderDependencyTree(path: string) {}
-function combineDependencyTrees(path: string) {}
-async function initiateRepoDependencyTree(path: string[]) {
+
+export async function initiateRepoDependencyTree(
+  paths: string[],
+  p: string = process.env.PREFIX ?? ""
+) {
+  let prefix = p.split(process.env.REPOSITORY_PATH ?? "")[1];
   try {
-    const cruiserResults: IReporterOutput = await cruise(path, options);
-    console.log(cruiserResults);
+    const cruiserResults: IReporterOutput = await cruise(paths, options);
+    const cruiserResultsDotMap: IReporterOutput = await cruise(paths, {
+      ...options,
+      outputType: "dot",
+    });
+    const output = cruiserResults.output;
+    writeFile(
+      resolve(path.join("output", "dependency-graphs", "dependency-graph.dot")),
+      cruiserResultsDotMap.output as string,
+      {
+        encoding: "utf8",
+        mode: 0o666,
+        flag: "w+",
+      },
+      prefix
+    );
+    const fp = path.join("output", "dependency-graph", "dependency-graph.svg");
+    const filePath = prefix
+      ? path.join(
+          fp.slice(0, fp.lastIndexOf("/")),
+          prefix,
+          fp.slice(fp.lastIndexOf("/"), fp.length)
+        )
+      : fp;
+
+    await exportToFile(cruiserResultsDotMap.output as string, {
+      format: "svg",
+      output: filePath,
+    });
+
+    if (typeof output === "string") {
+      writeFile(
+        resolve(
+          path.join("output", "dependency-graphs", "dependency-graph.json")
+        ),
+        JSON.stringify(output, null, 2),
+        {
+          encoding: "utf8",
+          mode: 0o666,
+          flag: "w+",
+        },
+        prefix
+      );
+    }
+
+    writeFile(
+      resolve(
+        path.join("output", "dependency-graphs", "dependency-graph.json")
+      ),
+      JSON.stringify(
+        {
+          modules: (output as ICruiseResult).modules,
+          folders: (output as ICruiseResult).folders,
+          revisionData: (output as ICruiseResult).revisionData,
+          excluded: ["summary"],
+        },
+        null,
+        2
+      ),
+      {
+        encoding: "utf8",
+        mode: 0o666,
+        flag: "w+",
+      },
+      prefix
+    );
     return;
   } catch (err) {
     console.error("### Error in cruising", err);
+    return;
   }
 }

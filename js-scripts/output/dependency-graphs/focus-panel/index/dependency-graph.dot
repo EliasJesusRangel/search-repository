@@ -1,0 +1,23 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/focus-panel" {label="focus-panel" "../../SML/apps/web/components/focus-panel/focus-panel.tsx" [label=<focus-panel.tsx> tooltip="focus-panel.tsx" URL="../../SML/apps/web/components/focus-panel/focus-panel.tsx" fillcolor="#bbfeff"] } } } } } } }
+    "../../SML/apps/web/components/focus-panel/focus-panel.tsx" -> "@/components/icons"
+    "../../SML/apps/web/components/focus-panel/focus-panel.tsx" -> "@/components/ui/button"
+    "../../SML/apps/web/components/focus-panel/focus-panel.tsx" -> "@/hooks/use-focus-panel"
+    "../../SML/apps/web/components/focus-panel/focus-panel.tsx" -> "@/store/store"
+    "../../SML/apps/web/components/focus-panel/focus-panel.tsx" -> "@/store/use-state-context"
+    "../../SML/apps/web/components/focus-panel/focus-panel.tsx" -> "node_modules/.pnpm" [penwidth="1.0"]
+    "../../SML/apps/web/components/focus-panel/focus-panel.tsx" -> "../../SML/packages/selectors/src/components/focus-panel/focus-panel-selectors.ts"
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/focus-panel" {label="focus-panel" "../../SML/apps/web/components/focus-panel/index.tsx" [label=<index.tsx> tooltip="index.tsx" URL="../../SML/apps/web/components/focus-panel/index.tsx" fillcolor="#bbfeff"] } } } } } } }
+    "../../SML/apps/web/components/focus-panel/index.tsx" -> "../../SML/apps/web/components/focus-panel/focus-panel.tsx" [arrowhead="inv"]
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/packages" {label="packages" subgraph "cluster_../../SML/packages/selectors" {label="selectors" subgraph "cluster_../../SML/packages/selectors/src" {label="src" subgraph "cluster_../../SML/packages/selectors/src/components" {label="components" subgraph "cluster_../../SML/packages/selectors/src/components/focus-panel" {label="focus-panel" "../../SML/packages/selectors/src/components/focus-panel/focus-panel-selectors.ts" [label=<focus-panel-selectors.ts> tooltip="focus-panel-selectors.ts" URL="../../SML/packages/selectors/src/components/focus-panel/focus-panel-selectors.ts" fillcolor="#ddfeff"] } } } } } } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/components" {label="components" "@/components/icons" [label=<icons> tooltip="icons" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/components" {label="components" subgraph "cluster_@/components/ui" {label="ui" "@/components/ui/button" [label=<button> tooltip="button" ] } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" "@/hooks/use-focus-panel" [label=<use-focus-panel> tooltip="use-focus-panel" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/store" {label="store" "@/store/store" [label=<store> tooltip="store" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/store" {label="store" "@/store/use-state-context" [label=<use-state-context> tooltip="use-state-context" ] } }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/.pnpm" [label=<.pnpm> tooltip=".pnpm" URL="https://www.npmjs.com/package/.pnpm" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+}

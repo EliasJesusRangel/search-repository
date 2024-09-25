@@ -1,0 +1,47 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/logical-preview-trees/tree-component/menu-items/edit/open-properties-panel.ts",
+      "dependencies": [
+        {
+          "module": "@/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/logical-preview-trees/tree-component/menu-items/edit/open-properties-panel.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

@@ -1,0 +1,43 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@ts-graphviz/node':
+    specifier: ^0.4.2
+    version: 0.4.2(ts-graphviz@0.13.2)
+
+packages:
+
+  /@ts-graphviz/node@0.4.2(ts-graphviz@0.13.2):
+    resolution: {integrity: sha512-sG/nrBEAvy7WkxS+6n0pF4hpeygn/MNR6REymnsjtyeO8rQk3qLjCLdqhgJHzg6WEBe6X6cF/WhSnW4SVE5Mtw==}
+    deprecated: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+    peerDependencies:
+      ts-graphviz: ^0.13.1
+    dependencies:
+      tmp-promise: 3.0.3
+      ts-graphviz: 0.13.2
+    dev: false
+
+  /tmp-promise@3.0.3:
+    resolution: {integrity: sha512-RwM7MoPojPxsOBYnyd2hy0bxtIlVrihNs9pj5SUvY8Zz1sQcQG2tG1hSr8PDxfgEB8RNKDhqbIlroIarSNDNsQ==}
+    dependencies:
+      tmp: 0.2.3
+    dev: false
+
+  /tmp@0.2.3:
+    resolution: {integrity: sha512-nZD7m9iCPC5g0pYmcaxogYKggSfLsdxl8of3Q/oIbqCqLLIO9IAF0GWjX1z9NZRHPiXv8Wex4yDCaZsgEw0Y8w==}
+    engines: {node: '>=14.14'}
+    dev: false
+
+  /ts-graphviz@0.13.2:
+    resolution: {integrity: sha512-ykQpHPT1RVNzv/ZN/zwawDIFHi8eiEl+H3x3B+ZOQ9eMUaosVMd1ePaf/CA9b15iix48cTa7RcXcWvI/ZgoNKw==}
+    dependencies:
+      tslib: 2.7.0
+    dev: false
+
+  /tslib@2.7.0:
+    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
+    dev: false

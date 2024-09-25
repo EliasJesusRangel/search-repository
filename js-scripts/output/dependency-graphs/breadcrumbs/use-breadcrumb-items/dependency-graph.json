@@ -1,0 +1,546 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts",
+      "dependencies": [
+        {
+          "module": "./use-breadcrumb-items",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/__mocks__/dicontainer/DiContainerBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/__mocks__/dicontainer/DiContainerBuilder",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/__mocks__/hook-builder/hook-builder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/__mocks__/hook-builder/hook-builder",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/__mocks__/hook-setup/hook-setup",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/__mocks__/hook-setup/hook-setup",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/hooks/use-tabs",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/hooks/use-tabs",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/tabs/tabs-store",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/tabs/tabs-store",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/builders/FolderStructureBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/builders/FolderStructureBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/__mocks__/dicontainer/DiContainerBuilder",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/__mocks__/hook-builder/hook-builder",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/__mocks__/hook-setup/hook-setup",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/hooks/use-tabs",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts",
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/store/tabs/tabs-store",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts",
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts",
+      "dependencies": [
+        {
+          "module": "@/dicontainer/diTypes",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/dicontainer/diTypes",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/hooks/use-files",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/hooks/use-files",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/hooks/use-tabs",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/hooks/use-tabs",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/store/tabs/tabs-store",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/store/tabs/tabs-store",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "inversify-react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/secure.util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/secure.util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/dicontainer/diTypes",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/hooks/use-files",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/inversify-react@1.1.0_inversify@6.0.1_react@18.2.0/node_modules/inversify-react/dist/index.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/secure.util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/builders/FolderStructureBuilder.ts",
+      "dependencies": [
+        {
+          "module": "../path.util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/path.util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./AnyObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/builders/AnyObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/../../packages/models/src/SourceType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/SourceType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/path.util.ts",
+      "dependencies": [
+        {
+          "module": "./Guard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/Guard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/utils/builders/FolderStructureBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/Guard.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/utils/path.util.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/builders/AnyObjectBuilder.ts",
+      "dependencies": [
+        {
+          "module": "./AbstractObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/builders/AbstractObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/utils/builders/FolderStructureBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/builders/AbstractObjectBuilder.ts",
+      "dependencies": [
+        {
+          "module": "../../utils/clone.util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/clone.util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/utils/builders/AnyObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/clone.util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/utils/builders/AbstractObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/SourceType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/utils/builders/FolderStructureBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

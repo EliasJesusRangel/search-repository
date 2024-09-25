@@ -1,0 +1,11 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/trees" {label="trees" subgraph "cluster_../../SML/apps/web/components/trees/hierarchy-tree" {label="hierarchy-tree" subgraph "cluster_../../SML/apps/web/components/trees/hierarchy-tree/hierarchy-node" {label="hierarchy-node" "../../SML/apps/web/components/trees/hierarchy-tree/hierarchy-node/use-hierarchy-node-drop.ts" [label=<use-hierarchy-node-drop.ts> tooltip="use-hierarchy-node-drop.ts" URL="../../SML/apps/web/components/trees/hierarchy-tree/hierarchy-node/use-hierarchy-node-drop.ts" fillcolor="#ddfeff"] } } } } } } } } }
+    "../../SML/apps/web/components/trees/hierarchy-tree/hierarchy-node/use-hierarchy-node-drop.ts" -> "@/lib/dnd-utils"
+    "../../SML/apps/web/components/trees/hierarchy-tree/hierarchy-node/use-hierarchy-node-drop.ts" -> "node_modules/.pnpm" [penwidth="1.0"]
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/lib" {label="lib" "@/lib/dnd-utils" [label=<dnd-utils> tooltip="dnd-utils" ] } }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/.pnpm" [label=<.pnpm> tooltip=".pnpm" URL="https://www.npmjs.com/package/.pnpm" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+}

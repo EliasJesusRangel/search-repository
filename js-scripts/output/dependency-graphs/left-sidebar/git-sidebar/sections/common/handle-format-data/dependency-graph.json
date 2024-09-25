@@ -1,0 +1,41 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/left-sidebar/git-sidebar/sections/common/handle-format-data.test.ts",
+      "dependencies": [
+        {
+          "module": "./handle-format-data",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/left-sidebar/git-sidebar/sections/common/handle-format-data.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/left-sidebar/git-sidebar/sections/common/handle-format-data.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/left-sidebar/git-sidebar/sections/common/handle-format-data.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

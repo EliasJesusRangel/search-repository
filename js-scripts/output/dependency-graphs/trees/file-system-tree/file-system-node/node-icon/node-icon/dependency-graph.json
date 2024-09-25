@@ -1,0 +1,291 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.test.tsx",
+      "dependencies": [
+        {
+          "module": "./node-icon",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.tsx",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/__mocks__/component-setup/ComponentSetup",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/__mocks__/component-setup/ComponentSetup",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/../../packages/models/src/SourceType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/SourceType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@testing-library/react",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm-dev",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/@testing-library+react@16.0.1_@testing-library+dom@10.1.0_@types+react-dom@18.2.7_@types+reac_fpvd4w6iwurh3rf4r3oeduyhlu/node_modules/@testing-library/react/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/builders/AnyObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/builders/AnyObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/__mocks__/component-setup/ComponentSetup",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.test.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/@testing-library+react@16.0.1_@testing-library+dom@10.1.0_@types+react-dom@18.2.7_@types+reac_fpvd4w6iwurh3rf4r3oeduyhlu/node_modules/@testing-library/react/dist/index.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm-dev",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.test.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.tsx",
+      "dependencies": [
+        {
+          "module": "@/../../packages/models/src/IFile",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/IFile.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "@/components/icons",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/icons",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.test.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/icons",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/IFile.ts",
+      "dependencies": [
+        {
+          "module": "./SourceType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/SourceType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/SourceType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.test.tsx",
+        "../../SML/packages/models/src/IFile.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/builders/AnyObjectBuilder.ts",
+      "dependencies": [
+        {
+          "module": "./AbstractObjectBuilder",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/builders/AbstractObjectBuilder.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/node-icon/node-icon.test.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/builders/AbstractObjectBuilder.ts",
+      "dependencies": [
+        {
+          "module": "../../utils/clone.util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/clone.util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/packages/utils/builders/AnyObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/clone.util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/utils/builders/AbstractObjectBuilder.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/id-uniqueness/verify-id-uniqueness.test.ts",
+      "dependencies": [
+        {
+          "module": "./verify-id-uniqueness",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/id-uniqueness/verify-id-uniqueness.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/id-uniqueness/verify-id-uniqueness.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/id-uniqueness/verify-id-uniqueness.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

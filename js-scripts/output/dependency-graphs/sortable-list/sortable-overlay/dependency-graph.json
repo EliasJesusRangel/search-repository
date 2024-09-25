@@ -1,0 +1,49 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/sortable-list/sortable-overlay.tsx",
+      "dependencies": [
+        {
+          "module": "@dnd-kit/core",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/@dnd-kit+core@6.0.8_react-dom@18.2.0_react@18.2.0/node_modules/@dnd-kit/core/dist/index.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/@dnd-kit+core@6.0.8_react-dom@18.2.0_react@18.2.0/node_modules/@dnd-kit/core/dist/index.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/sortable-list/sortable-overlay.tsx"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

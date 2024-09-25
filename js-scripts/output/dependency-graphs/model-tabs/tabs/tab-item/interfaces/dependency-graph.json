@@ -1,0 +1,14 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/model-tabs/tabs/tab-item/interfaces.ts",
+      "dependencies": [],
+      "dependents": [],
+      "orphan": true,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

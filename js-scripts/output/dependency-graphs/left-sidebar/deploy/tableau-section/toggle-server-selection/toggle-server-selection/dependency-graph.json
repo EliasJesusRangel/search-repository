@@ -1,0 +1,74 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/left-sidebar/deploy/tableau-section/toggle-server-selection/toggle-server-selection.test.ts",
+      "dependencies": [
+        {
+          "module": "./toggle-server-selection",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/left-sidebar/deploy/tableau-section/toggle-server-selection/toggle-server-selection.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/left-sidebar/deploy/tableau-section/toggle-server-selection/toggle-server-selection.ts",
+      "dependencies": [
+        {
+          "module": "@/components/multi-select/utils",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/components/multi-select/utils",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/left-sidebar/deploy/tableau-section/toggle-server-selection/toggle-server-selection.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/components/multi-select/utils",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/left-sidebar/deploy/tableau-section/toggle-server-selection/toggle-server-selection.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

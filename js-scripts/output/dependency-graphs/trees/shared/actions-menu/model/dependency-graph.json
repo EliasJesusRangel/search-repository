@@ -1,0 +1,14 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/trees/shared/actions-menu/model.ts",
+      "dependencies": [],
+      "dependents": [],
+      "orphan": true,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

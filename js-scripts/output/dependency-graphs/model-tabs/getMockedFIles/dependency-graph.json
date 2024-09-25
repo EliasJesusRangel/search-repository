@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/model-tabs/getMockedFIles.ts",
+      "dependencies": [
+        {
+          "module": "models/src/ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/SourceType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/SourceType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/ObjectType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/model-tabs/getMockedFIles.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/SourceType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/model-tabs/getMockedFIles.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

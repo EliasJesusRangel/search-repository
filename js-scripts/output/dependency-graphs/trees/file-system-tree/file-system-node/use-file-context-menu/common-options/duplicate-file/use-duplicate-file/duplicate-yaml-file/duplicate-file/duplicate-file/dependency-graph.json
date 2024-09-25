@@ -1,0 +1,49 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/trees/file-system-tree/file-system-node/use-file-context-menu/common-options/duplicate-file/use-duplicate-file/duplicate-yaml-file/duplicate-file/duplicate-file.ts",
+      "dependencies": [
+        {
+          "module": "lodash",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/file-system-tree/file-system-node/use-file-context-menu/common-options/duplicate-file/use-duplicate-file/duplicate-yaml-file/duplicate-file/duplicate-file.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

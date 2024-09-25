@@ -1,0 +1,14 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/model-canvas/dataset-node/dataset-node-focus-panel-content.tsx",
+      "dependencies": [],
+      "dependents": [],
+      "orphan": true,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

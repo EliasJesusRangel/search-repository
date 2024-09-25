@@ -1,0 +1,14 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/profile/user-status.tsx",
+      "dependencies": [],
+      "dependents": [],
+      "orphan": true,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

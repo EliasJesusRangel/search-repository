@@ -1,0 +1,41 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/left-sidebar/git-sidebar/is-sync-button-disabled/is-sync-button-disabled.test.ts",
+      "dependencies": [
+        {
+          "module": "./is-sync-button-disabled",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/left-sidebar/git-sidebar/is-sync-button-disabled/is-sync-button-disabled.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/left-sidebar/git-sidebar/is-sync-button-disabled/is-sync-button-disabled.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/left-sidebar/git-sidebar/is-sync-button-disabled/is-sync-button-disabled.test.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

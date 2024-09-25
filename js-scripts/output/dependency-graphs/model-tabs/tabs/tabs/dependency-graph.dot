@@ -1,0 +1,11 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/model-tabs" {label="model-tabs" subgraph "cluster_../../SML/apps/web/components/model-tabs/tabs" {label="tabs" "../../SML/apps/web/components/model-tabs/tabs/tabs.test.tsx" [label=<tabs.test.tsx> tooltip="tabs.test.tsx" URL="../../SML/apps/web/components/model-tabs/tabs/tabs.test.tsx" fillcolor="#bbfeff"] } } } } } } } }
+    "../../SML/apps/web/components/model-tabs/tabs/tabs.test.tsx" -> "@/components/model-tabs/tabs/tabs"
+    "../../SML/apps/web/components/model-tabs/tabs/tabs.test.tsx" -> "@/store/tabs/tabs-store"
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/components" {label="components" subgraph "cluster_@/components/model-tabs" {label="model-tabs" subgraph "cluster_@/components/model-tabs/tabs" {label="tabs" "@/components/model-tabs/tabs/tabs" [label=<tabs> tooltip="tabs" ] } } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/store" {label="store" subgraph "cluster_@/store/tabs" {label="tabs" "@/store/tabs/tabs-store" [label=<tabs-store> tooltip="tabs-store" ] } } }
+}

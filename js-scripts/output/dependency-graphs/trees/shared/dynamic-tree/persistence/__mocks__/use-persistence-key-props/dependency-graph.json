@@ -1,0 +1,14 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/trees/shared/dynamic-tree/persistence/__mocks__/use-persistence-key-props.ts",
+      "dependencies": [],
+      "dependents": [],
+      "orphan": true,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

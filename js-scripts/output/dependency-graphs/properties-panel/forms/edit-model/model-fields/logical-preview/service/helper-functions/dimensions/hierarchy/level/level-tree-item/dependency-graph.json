@@ -1,0 +1,1333 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+      "dependencies": [
+        {
+          "module": "../../../../logical-preview-service",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-levels.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "../../../add-role-playing/add-role-playing-template",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/add-role-playing/add-role-playing-template.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "../../../get-folder-item/get-folder-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-levels.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-levels.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+      "dependencies": [
+        {
+          "module": "./helper-functions/dimensions/get-dim-tree-items",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "./helper-functions/id-uniqueness/verify-id-uniqueness",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/id-uniqueness/verify-id-uniqueness.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./helper-functions/measures/get-item/get-measure-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-item/get-measure-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-item/get-measure-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "./helper-functions/measures/get-tree/get-measures-tree",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-tree/get-measures-tree.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-tree/get-measures-tree.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "@/lib/array-util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/lib/array-util",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "inversify",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "npm",
+            "import"
+          ],
+          "resolved": "../../SML/node_modules/.pnpm/inversify@6.0.1/node_modules/inversify/lib/inversify.js",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": true,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-item/get-measure-item.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/lib/array-util",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/node_modules/.pnpm/inversify@6.0.1/node_modules/inversify/lib/inversify.js",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": false,
+      "matchesDoNotFollow": true,
+      "dependencyTypes": [
+        "npm",
+        "import"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+      "dependencies": [
+        {
+          "module": "../get-folder-item/get-folder-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "./add-to-tree-data",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "./hierarchy/get-hierarchy-tree-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "models/src/yaml/guards/YamlDimensionTypeGuard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/YamlDimensionTypeGuard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/yaml/guards/YamlModelTypeGuard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/YamlModelTypeGuard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/yaml/IYamlRelationUtil",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/IYamlRelationUtil.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/Guard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/Guard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+      "dependencies": [
+        {
+          "module": "../../logical-preview-service",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-tree/get-measures-tree.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+      "dependencies": [
+        {
+          "module": "../add-role-playing/add-role-playing-template",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/add-role-playing/add-role-playing-template.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "../get-folder-item/get-folder-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "./hierarchy/get-hierarchy-tree-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "models/src/yaml/guards/YamlDimensionTypeGuard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/YamlDimensionTypeGuard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "models/src/yaml/IYamlRelationUtil",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/IYamlRelationUtil.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "utils/Guard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/utils/Guard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/add-role-playing/add-role-playing-template.ts",
+      "dependencies": [
+        {
+          "module": "@/common/constants/constants",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "unknown"
+          ],
+          "resolved": "@/common/constants/constants",
+          "coreModule": false,
+          "followable": false,
+          "couldNotResolve": true,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "@/common/constants/constants",
+      "followable": false,
+      "coreModule": false,
+      "couldNotResolve": true,
+      "matchesDoNotFollow": false,
+      "dependencyTypes": [
+        "unknown"
+      ],
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/add-role-playing/add-role-playing-template.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+      "dependencies": [
+        {
+          "module": "../../../logical-preview-service",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "../../add-role-playing/add-role-playing-template",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/add-role-playing/add-role-playing-template.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./get-hierarchy-levels",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-levels.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-levels.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-levels.ts",
+      "dependencies": [
+        {
+          "module": "./level/level-tree-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/level/level-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-levels.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/hierarchy/get-hierarchy-tree-item.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/guards/YamlDimensionTypeGuard.ts",
+      "dependencies": [
+        {
+          "module": "../IYamlDimension",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/IYamlDimension.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./type-guard-util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/type-guard-util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts",
+        "../../SML/packages/models/src/yaml/IYamlRelationUtil.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/IYamlDimension.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/models/src/yaml/guards/YamlDimensionTypeGuard.ts",
+        "../../SML/packages/models/src/yaml/IYamlRelationUtil.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/guards/type-guard-util.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/packages/models/src/yaml/guards/YamlDimensionTypeGuard.ts",
+        "../../SML/packages/models/src/yaml/guards/YamlModelTypeGuard.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/IYamlRelationUtil.ts",
+      "dependencies": [
+        {
+          "module": "./guards/YamlDimensionTypeGuard",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/YamlDimensionTypeGuard.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        },
+        {
+          "module": "./IYamlDimension",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/IYamlDimension.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/utils/Guard.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/add-to-tree-data.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/yaml/guards/YamlModelTypeGuard.ts",
+      "dependencies": [
+        {
+          "module": "./type-guard-util",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/yaml/guards/type-guard-util.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/dimensions/get-dim-tree-items.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/id-uniqueness/verify-id-uniqueness.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-item/get-measure-item.ts",
+      "dependencies": [
+        {
+          "module": "../../../logical-preview-service",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-item/get-measure-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        },
+        {
+          "module": "models/src/ObjectType",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "undetermined",
+            "import"
+          ],
+          "resolved": "../../SML/packages/models/src/ObjectType.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/packages/models/src/ObjectType.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-item/get-measure-item.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-tree/get-measures-tree.ts",
+      "dependencies": [
+        {
+          "module": "../../get-folder-item/get-folder-item",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": true,
+          "cycle": [
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/get-folder-item/get-folder-item.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            },
+            {
+              "name": "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/helper-functions/measures/get-tree/get-measures-tree.ts",
+              "dependencyTypes": [
+                "local",
+                "import"
+              ]
+            }
+          ],
+          "valid": true
+        }
+      ],
+      "dependents": [
+        "../../SML/apps/web/components/properties-panel/forms/edit-model/model-fields/logical-preview/service/logical-preview-service.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

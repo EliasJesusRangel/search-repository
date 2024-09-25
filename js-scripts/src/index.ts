@@ -1,7 +1,8 @@
-import { PROCEDURES } from "./constants";
+import { ACTION_KEY, PROCEDURES } from "./constants";
 import { config } from "dotenv";
+import { orchestrate } from "./runners";
 
-function main(action) {
+function main(action: ACTION_KEY[number]) {
   if (!action) {
     console.log(
       "### NO action defined, please type one of the following after the script name",
@@ -18,11 +19,7 @@ function main(action) {
         procedure.label
       } with config\n\n${JSON.stringify(process.env.REPOSITORY_PATH, null, 2)}`
     );
-    try {
-      procedure.fn();
-    } catch (err) {
-      console.log(`### Error performing action ${procedure.label}\n\n${err}`);
-    }
+    orchestrate(procedure);
   } catch (error) {
     console.error("Error in main:", error);
   }

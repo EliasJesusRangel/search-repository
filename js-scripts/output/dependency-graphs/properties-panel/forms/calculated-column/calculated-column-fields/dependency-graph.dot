@@ -1,0 +1,17 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/properties-panel" {label="properties-panel" subgraph "cluster_../../SML/apps/web/components/properties-panel/forms" {label="forms" subgraph "cluster_../../SML/apps/web/components/properties-panel/forms/calculated-column" {label="calculated-column" "../../SML/apps/web/components/properties-panel/forms/calculated-column/calculated-column-fields.tsx" [label=<calculated-column-fields.tsx> tooltip="calculated-column-fields.tsx" URL="../../SML/apps/web/components/properties-panel/forms/calculated-column/calculated-column-fields.tsx" fillcolor="#bbfeff"] } } } } } } } } }
+    "../../SML/apps/web/components/properties-panel/forms/calculated-column/calculated-column-fields.tsx" -> "@/components/sidebar/form/form"
+    "../../SML/apps/web/components/properties-panel/forms/calculated-column/calculated-column-fields.tsx" -> "@/components/sidebar/form/form-fields"
+    "../../SML/apps/web/components/properties-panel/forms/calculated-column/calculated-column-fields.tsx" -> "@/components/ui/button/button"
+    "../../SML/apps/web/components/properties-panel/forms/calculated-column/calculated-column-fields.tsx" -> "@/hooks/use-calc-column-verify-query"
+    "../../SML/apps/web/components/properties-panel/forms/calculated-column/calculated-column-fields.tsx" -> "node_modules/.pnpm" [penwidth="1.0"]
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/components" {label="components" subgraph "cluster_@/components/sidebar" {label="sidebar" subgraph "cluster_@/components/sidebar/form" {label="form" "@/components/sidebar/form/form" [label=<form> tooltip="form" ] } } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/components" {label="components" subgraph "cluster_@/components/sidebar" {label="sidebar" subgraph "cluster_@/components/sidebar/form" {label="form" "@/components/sidebar/form/form-fields" [label=<form-fields> tooltip="form-fields" ] } } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/components" {label="components" subgraph "cluster_@/components/ui" {label="ui" subgraph "cluster_@/components/ui/button" {label="button" "@/components/ui/button/button" [label=<button> tooltip="button" ] } } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" "@/hooks/use-calc-column-verify-query" [label=<use-calc-column-verify-query> tooltip="use-calc-column-verify-query" ] } }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/.pnpm" [label=<.pnpm> tooltip=".pnpm" URL="https://www.npmjs.com/package/.pnpm" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+}

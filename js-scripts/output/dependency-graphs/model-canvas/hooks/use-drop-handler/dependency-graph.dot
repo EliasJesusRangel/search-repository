@@ -1,0 +1,15 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/model-canvas" {label="model-canvas" subgraph "cluster_../../SML/apps/web/components/model-canvas/hooks" {label="hooks" "../../SML/apps/web/components/model-canvas/hooks/use-drop-handler.tsx" [label=<use-drop-handler.tsx> tooltip="use-drop-handler.tsx" URL="../../SML/apps/web/components/model-canvas/hooks/use-drop-handler.tsx" fillcolor="#bbfeff"] } } } } } } } }
+    "../../SML/apps/web/components/model-canvas/hooks/use-drop-handler.tsx" -> "@/hooks/canvas-hooks/use-canvas-actions"
+    "../../SML/apps/web/components/model-canvas/hooks/use-drop-handler.tsx" -> "@/hooks/use-dataset"
+    "../../SML/apps/web/components/model-canvas/hooks/use-drop-handler.tsx" -> "@/lib/dnd-utils"
+    "../../SML/apps/web/components/model-canvas/hooks/use-drop-handler.tsx" -> "node_modules/.pnpm" [penwidth="1.0"]
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" subgraph "cluster_@/hooks/canvas-hooks" {label="canvas-hooks" "@/hooks/canvas-hooks/use-canvas-actions" [label=<use-canvas-actions> tooltip="use-canvas-actions" ] } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" "@/hooks/use-dataset" [label=<use-dataset> tooltip="use-dataset" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/lib" {label="lib" "@/lib/dnd-utils" [label=<dnd-utils> tooltip="dnd-utils" ] } }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/.pnpm" [label=<.pnpm> tooltip=".pnpm" URL="https://www.npmjs.com/package/.pnpm" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+}

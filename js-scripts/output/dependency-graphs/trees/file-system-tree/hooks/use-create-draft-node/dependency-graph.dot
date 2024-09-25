@@ -1,0 +1,24 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/trees" {label="trees" subgraph "cluster_../../SML/apps/web/components/trees/file-system-tree" {label="file-system-tree" subgraph "cluster_../../SML/apps/web/components/trees/file-system-tree/hooks" {label="hooks" "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" [label=<use-create-draft-node.ts> tooltip="use-create-draft-node.ts" URL="../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" fillcolor="#ddfeff"] } } } } } } } } }
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "../../SML/packages/models/src/SourceType.ts"
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "@/dicontainer/diTypes"
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "@/hooks/use-files"
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "@/store/store"
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "@/store/use-state-context"
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "node_modules/.pnpm" [penwidth="1.0"]
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "../../SML/packages/utils/Guard.ts"
+    "../../SML/apps/web/components/trees/file-system-tree/hooks/use-create-draft-node.ts" -> "../../SML/packages/utils/path.util.ts"
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/packages" {label="packages" subgraph "cluster_../../SML/packages/models" {label="models" subgraph "cluster_../../SML/packages/models/src" {label="src" "../../SML/packages/models/src/SourceType.ts" [label=<SourceType.ts> tooltip="SourceType.ts" URL="../../SML/packages/models/src/SourceType.ts" fillcolor="#ddfeff"] } } } } } }
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/packages" {label="packages" subgraph "cluster_../../SML/packages/utils" {label="utils" "../../SML/packages/utils/Guard.ts" [label=<Guard.ts> tooltip="Guard.ts" URL="../../SML/packages/utils/Guard.ts" fillcolor="#ddfeff"] } } } } }
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/packages" {label="packages" subgraph "cluster_../../SML/packages/utils" {label="utils" "../../SML/packages/utils/path.util.ts" [label=<path.util.ts> tooltip="path.util.ts" URL="../../SML/packages/utils/path.util.ts" fillcolor="#ddfeff"] } } } } }
+    "../../SML/packages/utils/path.util.ts" -> "../../SML/packages/utils/Guard.ts"
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/dicontainer" {label="dicontainer" "@/dicontainer/diTypes" [label=<diTypes> tooltip="diTypes" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" "@/hooks/use-files" [label=<use-files> tooltip="use-files" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/store" {label="store" "@/store/store" [label=<store> tooltip="store" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/store" {label="store" "@/store/use-state-context" [label=<use-state-context> tooltip="use-state-context" ] } }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/.pnpm" [label=<.pnpm> tooltip=".pnpm" URL="https://www.npmjs.com/package/.pnpm" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+}

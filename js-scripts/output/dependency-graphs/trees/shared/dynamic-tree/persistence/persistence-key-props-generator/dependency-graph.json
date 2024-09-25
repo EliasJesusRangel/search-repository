@@ -1,0 +1,41 @@
+{
+  "modules": [
+    {
+      "source": "../../SML/apps/web/components/trees/shared/dynamic-tree/persistence/persistence-key-props-generator.ts",
+      "dependencies": [
+        {
+          "module": "./models",
+          "moduleSystem": "es6",
+          "dynamic": false,
+          "exoticallyRequired": false,
+          "dependencyTypes": [
+            "local",
+            "import"
+          ],
+          "resolved": "../../SML/apps/web/components/trees/shared/dynamic-tree/persistence/models.ts",
+          "coreModule": false,
+          "followable": true,
+          "couldNotResolve": false,
+          "matchesDoNotFollow": false,
+          "circular": false,
+          "valid": true
+        }
+      ],
+      "dependents": [],
+      "orphan": false,
+      "valid": true
+    },
+    {
+      "source": "../../SML/apps/web/components/trees/shared/dynamic-tree/persistence/models.ts",
+      "dependencies": [],
+      "dependents": [
+        "../../SML/apps/web/components/trees/shared/dynamic-tree/persistence/persistence-key-props-generator.ts"
+      ],
+      "orphan": false,
+      "valid": true
+    }
+  ],
+  "excluded": [
+    "summary"
+  ]
+}

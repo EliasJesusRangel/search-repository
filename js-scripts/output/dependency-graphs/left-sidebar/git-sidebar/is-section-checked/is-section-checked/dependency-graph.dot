@@ -1,0 +1,9 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/left-sidebar" {label="left-sidebar" subgraph "cluster_../../SML/apps/web/components/left-sidebar/git-sidebar" {label="git-sidebar" subgraph "cluster_../../SML/apps/web/components/left-sidebar/git-sidebar/is-section-checked" {label="is-section-checked" "../../SML/apps/web/components/left-sidebar/git-sidebar/is-section-checked/is-section-checked.ts" [label=<is-section-checked.ts> tooltip="is-section-checked.ts" URL="../../SML/apps/web/components/left-sidebar/git-sidebar/is-section-checked/is-section-checked.ts" fillcolor="#ddfeff"] } } } } } } } } }
+    "../../SML/apps/web/components/left-sidebar/git-sidebar/is-section-checked/is-section-checked.ts" -> "@/components/ui/checkbox/checkbox"
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/components" {label="components" subgraph "cluster_@/components/ui" {label="ui" subgraph "cluster_@/components/ui/checkbox" {label="checkbox" "@/components/ui/checkbox/checkbox" [label=<checkbox> tooltip="checkbox" ] } } } }
+}

@@ -1,0 +1,9 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/model-canvas" {label="model-canvas" subgraph "cluster_../../SML/apps/web/components/model-canvas/floating-edge" {label="floating-edge" "../../SML/apps/web/components/model-canvas/floating-edge/floating-edge-util.ts" [label=<floating-edge-util.ts> tooltip="floating-edge-util.ts" URL="../../SML/apps/web/components/model-canvas/floating-edge/floating-edge-util.ts" fillcolor="#ddfeff"] } } } } } } } }
+    "../../SML/apps/web/components/model-canvas/floating-edge/floating-edge-util.ts" -> "node_modules/.pnpm" [penwidth="1.0"]
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/.pnpm" [label=<.pnpm> tooltip=".pnpm" URL="https://www.npmjs.com/package/.pnpm" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+}

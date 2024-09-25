@@ -1,0 +1,26 @@
+strict digraph "dependency-cruiser output"{
+    rankdir="LR" splines="true" overlap="false" nodesep="0.16" ranksep="0.18" fontname="Helvetica-bold" fontsize="9" style="rounded,bold,filled" fillcolor="#ffffff" compound="true"
+    node [shape="box" style="rounded, filled" height="0.2" color="black" fillcolor="#ffffcc" fontcolor="black" fontname="Helvetica" fontsize="9"]
+    edge [arrowhead="normal" arrowsize="0.6" penwidth="2.0" color="#00000033" fontname="Helvetica" fontsize="9"]
+
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/breadcrumbs" {label="breadcrumbs" "../../SML/apps/web/components/breadcrumbs/breadcrumbs.tsx" [label=<breadcrumbs.tsx> tooltip="breadcrumbs.tsx" URL="../../SML/apps/web/components/breadcrumbs/breadcrumbs.tsx" fillcolor="#bbfeff"] } } } } } } }
+    "../../SML/apps/web/components/breadcrumbs/breadcrumbs.tsx" -> "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts"
+    "../../SML/apps/web/components/breadcrumbs/breadcrumbs.tsx" -> "@/hooks/file-hooks/use-open-file-for-edit"
+    "../../SML/apps/web/components/breadcrumbs/breadcrumbs.tsx" -> "@/lib/utils"
+    "../../SML/apps/web/components/breadcrumbs/breadcrumbs.tsx" -> "node_modules/.pnpm" [penwidth="1.0"]
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/apps" {label="apps" subgraph "cluster_../../SML/apps/web" {label="web" subgraph "cluster_../../SML/apps/web/components" {label="components" subgraph "cluster_../../SML/apps/web/components/breadcrumbs" {label="breadcrumbs" "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" [label=<use-breadcrumb-items.ts> tooltip="use-breadcrumb-items.ts" URL="../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" fillcolor="#ddfeff"] } } } } } } }
+    "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" -> "@/dicontainer/diTypes"
+    "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" -> "@/hooks/use-files"
+    "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" -> "@/hooks/use-tabs"
+    "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" -> "@/store/tabs/tabs-store"
+    "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" -> "node_modules/.pnpm" [penwidth="1.0"]
+    "../../SML/apps/web/components/breadcrumbs/use-breadcrumb-items.ts" -> "../../SML/packages/utils/secure.util.ts"
+    subgraph "cluster_.." {label=".." subgraph "cluster_../.." {label=".." subgraph "cluster_../../SML" {label="SML" subgraph "cluster_../../SML/packages" {label="packages" subgraph "cluster_../../SML/packages/utils" {label="utils" "../../SML/packages/utils/secure.util.ts" [label=<secure.util.ts> tooltip="secure.util.ts" URL="../../SML/packages/utils/secure.util.ts" fillcolor="#ddfeff"] } } } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/dicontainer" {label="dicontainer" "@/dicontainer/diTypes" [label=<diTypes> tooltip="diTypes" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" subgraph "cluster_@/hooks/file-hooks" {label="file-hooks" "@/hooks/file-hooks/use-open-file-for-edit" [label=<use-open-file-for-edit> tooltip="use-open-file-for-edit" ] } } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" "@/hooks/use-files" [label=<use-files> tooltip="use-files" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/hooks" {label="hooks" "@/hooks/use-tabs" [label=<use-tabs> tooltip="use-tabs" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/lib" {label="lib" "@/lib/utils" [label=<utils> tooltip="utils" ] } }
+    subgraph "cluster_@" {label="@" subgraph "cluster_@/store" {label="store" subgraph "cluster_@/store/tabs" {label="tabs" "@/store/tabs/tabs-store" [label=<tabs-store> tooltip="tabs-store" ] } } }
+    subgraph "cluster_node_modules" {label="node_modules" "node_modules/.pnpm" [label=<.pnpm> tooltip=".pnpm" URL="https://www.npmjs.com/package/.pnpm" shape="box3d" fillcolor="#c40b0a1a" fontcolor="#c40b0a"] }
+}
