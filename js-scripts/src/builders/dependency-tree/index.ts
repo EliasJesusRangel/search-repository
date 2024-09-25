@@ -1,3 +1,5 @@
+import fs from "fs";
+
 import { exportToFile } from "@ts-graphviz/node";
 import { writeFile } from "@/src/utilities/write-file";
 import { ICruiseOptions, ICruiseResult } from "dependency-cruiser";
@@ -404,7 +406,7 @@ export async function initiateRepoDependencyTree(
       },
       prefix
     );
-    const fp = path.join("output", "dependency-graph", "dependency-graph.svg");
+    const fp = path.join("output", "dependency-graphs", "dependency-graph.svg");
     const filePath = prefix
       ? path.join(
           fp.slice(0, fp.lastIndexOf("/")),
@@ -412,6 +414,14 @@ export async function initiateRepoDependencyTree(
           fp.slice(fp.lastIndexOf("/"), fp.length)
         )
       : fp;
+    const mightHaveInvalidFolder = existsSync(filePath);
+
+    if (!mightHaveInvalidFolder) {
+      console.log("### INVALID PATHS, RECURSIVELY CREATING");
+      fs.mkdirSync(filePath.slice(0, filePath.lastIndexOf("/")), {
+        recursive: true,
+      });
+    }
 
     await exportToFile(cruiserResultsDotMap.output as string, {
       format: "svg",
