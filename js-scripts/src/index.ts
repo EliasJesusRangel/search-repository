@@ -1,29 +1,34 @@
-import { ACTION_KEY, PROCEDURES } from "./constants";
+import { ACTION_KEY } from "./constants";
 import { config } from "dotenv";
-import { orchestrate } from "./runners";
+import { run } from "./runners";
 
-function main(action: ACTION_KEY[number]) {
-  if (!action) {
+function main() {
+  const action = process.argv.find((value: string, index, obj) =>
+    Object.keys(ACTION_KEY).includes(value)
+  );
+
+  if (!action || action === "") {
     console.log(
-      "### NO action defined, please type one of the following after the script name",
-      JSON.stringify(PROCEDURES, null, 2)
+      "### NO action defined, please type one of the following after the script name"
     );
     return;
   }
 
-  console.log("### Beginnning search utility...");
+  console.log("### Beginning utility...\n", `action: ${action}`);
+
   try {
-    const procedure = PROCEDURES[action];
     console.log(
-      `### Performing actions ${
-        procedure.label
-      } with config\n\n${JSON.stringify(process.env.REPOSITORY_PATH, null, 2)}`
+      `### Performing actions with config\n\n${JSON.stringify(
+        process.env.REPOSITORY_PATH,
+        null,
+        2
+      )}`
     );
-    orchestrate(procedure);
+    run(action);
   } catch (error) {
     console.error("Error in main:", error);
   }
 }
 
 config();
-main(process.argv[2] ?? null);
+main();

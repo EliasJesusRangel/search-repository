@@ -11,6 +11,7 @@
   "author": "Elias Rangel",
   "license": "MIT",
   "dependencies": {
+    "@ts-graphviz/node": "^0.4.2",
     "@types/node": "^22.7.0",
     "dependency-cruiser": "^16.4.2",
     "dotenv": "^16.4.5",

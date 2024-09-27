@@ -20,7 +20,6 @@ Fundamentally this repository contains different methods for exporting these sea
 * config
 	* output directory
 	* repository
-	* repository token (read-only)
 * available commands
 	* export/report
 	* search

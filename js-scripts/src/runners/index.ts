@@ -1,10 +1,31 @@
-import { Procedure } from "../constants";
+import { ACTION_KEY } from "../constants";
+import { Procedure } from "../types";
+import {
+  buildDependencyTreeAction,
+  buildDependencyTreeRunner,
+} from "./dependency-tree-runners/dependency-tree-runner";
+import {
+  searchRepositoryAction,
+  searchRepositoryRunner,
+} from "./search-runner";
 
-export function orchestrate(procedure: Procedure) {
-  console.log("### Orchestrator performing action", procedure.fn.name);
-  try {
-    procedure.fn();
-  } catch (err) {
-    console.log(`### Error performing action ${procedure.label}\n\n${err}`);
-  }
+export const PROCEDURES: {
+  [key: string]: Procedure;
+} = {
+  [ACTION_KEY.buildDependencyTree]: {
+    fn: buildDependencyTreeAction,
+    runner: buildDependencyTreeRunner,
+    label: ACTION_KEY.buildDependencyTree,
+  },
+  [ACTION_KEY.searchRepository]: {
+    fn: searchRepositoryAction,
+    runner: searchRepositoryRunner,
+    label: ACTION_KEY.searchRepository,
+  },
+} as const;
+
+export function run(action: string) {
+  console.log("### Runner starting...", action);
+  const proc = PROCEDURES[ACTION_KEY[action]];
+  proc.runner();
 }

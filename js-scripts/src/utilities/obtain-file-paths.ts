@@ -23,5 +23,11 @@ export function obtainFilePaths(
   }
 
   traverseDirectory(rootDirectory);
-  return filePaths;
+  return filePaths.filter(
+    (path) =>
+      path.endsWith("ts") ||
+      path.endsWith(".tsx") ||
+      path.endsWith(".js") ||
+      path.endsWith(".jsx")
+  );
 }
